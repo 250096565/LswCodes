@@ -1,0 +1,117 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Demo</title>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <link href="css/video-js.css" rel="stylesheet" />
+    <script src="js/videojs-ie8.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/VideoTool.js"></script>
+    <script type="text/javascript">
+        videojs.options.flash.swf = "js/video-js.swf";
+    </script>
+</head>
+
+
+<body>
+    <div id="play">
+        <embed src="Vedio/flash4286.swf" id="abvertising" width="640" height="260" style='top:60px;left:160px;display:none' />
+        <video id="vedio" class="video-js vjs-default-skin" controls preload="none" width="640" height="264" poster="/css/loading.gif" data-setup="{}">
+            <source src="/Vedio/oceans.mp4" type="video/mp4" />
+            <source src="/Vedio/oceans.webm" type="video/webm" />
+            <source src="/Vedio/oceans.ogv" type="video/ogg" />
+
+            <!--用于设置标题字幕-->
+            <track kind="captions" src="..d/example-captions.vtt" srclang="en" label="中文"></track>
+            <track kind="subtitles" src="..d/example-captions.vtt" srclang="en" label="中文"></track>
+            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+
+
+        </video>
+    </div>
+
+    <div id="commercialsPosition">
+
+        <a href="http://www.baidu.com" target="_blank"><img src="css/chuanQ.gif" width="180" height="160" style='position: absolute; top: 70px; left: 468px; display: none; ' id="floatWindow" /></a>
+        <img src="css/close.png" style='position: absolute; top: 70px; left: 632px; display: none' id="close" />
+        <!--<img src='css/advertising.gif' id='abvertising' width='300' height='150' style='position:absolute;top:60px;left:160px;display:none' />-->
+
+    </div>
+    <input type="button" value="播放/暂停" id="playorstop" />
+    <input type="button" value="快退" id="back">
+    <input type="button" value="快进" id="forward">
+    <input type="button" value="加音量" id="increase">
+    <input type="button" value="减音量" id="Minus">
+    <input type="button" value="加广告" id="advertis">
+</body>
+
+</html>
+<script type="text/javascript">
+
+    //播放器对象
+    var myPlay = videojs("vedio")
+
+    $(function () {
+        //播放事件
+        myPlay.on('play', function () {
+            $('#abvertising').hide();
+            $('#floatWindow').hide();
+            $('#close').hide();
+        })
+        //二秒处出浮窗
+        var fwresult = AddFloatingWindow(2, 10, 'css/chuanQ.gif', 'leftDown');
+        if (fwresult != 'ok') {
+            alert('浮窗设置失败: ' + fwresult);
+        }
+        //二十秒处出广告
+        var abresult = Addabvertising(20, "Vedio/flash4286.swf", 10);
+        if (abresult != 'ok') {
+            alert('浮窗设置失败: ' + abresult);
+        }
+        //点击关闭广告
+        $('#close').click(function () {
+            $('#floatWindow').hide();
+            $('#close').hide();
+            ftime = 0;
+            myPlay.play();
+        })
+
+
+        //去除广告
+        $('#abvertising').click(function () {
+            $(this).css("display", "none");
+            myPlay.play();
+        })
+
+        //播放/暂停
+        $('#playorstop').click(function () {
+            PlayOrPause();
+        })
+        //加广告
+        $('#advertis').click(function () {
+            myPlay.pause();
+            $('#abvertising').show();
+        })
+        //快退
+        $('#back').click(function () {
+            Rewind();
+        })
+        //快近
+        $('#forward').click(function () {
+            Forward();
+        })
+        //加音量
+        $('#increase').click(function () {
+            AddVolume();
+        })
+        //减音量
+        $('#Minus').click(function () {
+            MinusVolume();
+        })
+
+    })
+
+</script>

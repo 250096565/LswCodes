@@ -1,0 +1,13 @@
+E:\MyCode\SVNCodeDemo\SvnDemo\bin\Debug\svnOper.dll
+E:\MyCode\SVNCodeDemo\SvnDemo\bin\Debug\SharpSvn.dll
+E:\MyCode\SVNCodeDemo\SvnDemo\bin\Debug\SvnDemo.exe
+E:\MyCode\SVNCodeDemo\SvnDemo\bin\Debug\SharpPlink-Win32.svnExe
+E:\MyCode\SVNCodeDemo\SvnDemo\obj\Debug\SvnDemo.csprojResolveAssemblyReference.cache
+E:\MyCode\SVNCodeDemo\SvnDemo\obj\Debug\SvnDemo.Form1.resources
+E:\MyCode\SVNCodeDemo\SvnDemo\obj\Debug\SvnDemo.Properties.Resources.resources
+E:\MyCode\SVNCodeDemo\SvnDemo\obj\Debug\SvnDemo.SvnMain.resources
+E:\MyCode\SVNCodeDemo\SvnDemo\obj\Debug\SvnDemo.csproj.GenerateResource.Cache
+E:\MyCode\SVNCodeDemo\SvnDemo\obj\Debug\SvnDemo.exe
+E:\MyCode\SVNCodeDemo\SvnDemo\obj\Debug\SvnDemo.pdb
+E:\MyCode\SVNCodeDemo\SvnDemo\bin\Debug\SvnDemo.exe.config
+E:\MyCode\SVNCodeDemo\SvnDemo\bin\Debug\SvnDemo.pdb

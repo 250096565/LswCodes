@@ -1,0 +1,6 @@
+E:\MyCode\VoideDemo\VoideDemo\bin\VoideDemo.dll.config
+E:\MyCode\VoideDemo\VoideDemo\bin\VoideDemo.dll
+E:\MyCode\VoideDemo\VoideDemo\bin\VoideDemo.pdb
+E:\MyCode\VoideDemo\VoideDemo\obj\Debug\VoideDemo.csprojResolveAssemblyReference.cache
+E:\MyCode\VoideDemo\VoideDemo\obj\Debug\VoideDemo.dll
+E:\MyCode\VoideDemo\VoideDemo\obj\Debug\VoideDemo.pdb

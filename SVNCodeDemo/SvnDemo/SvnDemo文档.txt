@@ -1,0 +1,95 @@
+﻿svnDemo使用文档
+
+注：提交操作因为组件原因，如果取消提交同样会提示操作成功
+
+操作说明
+
+1、登录
+1.1参数
+username svn账号
+pwd      svn密码
+
+2、检出
+2.1参数
+servicePath 服务器路径
+localPath 本地路径
+
+3、更新
+3.1参数
+localPath 本地路径
+
+4、提交
+4.1参数
+localPath 本地路径
+
+5、查看Log
+5.1参数
+localPath 本地路径
+
+
+SvnManger类说明
+
+1、Initialize方法  此方法用与初始化静态对象
+1.1参数
+username svn账号
+passWord svn密码
+1.2返回值
+true or false 操作是否成功
+operSVN.lastErrMsg 失败的说明 
+
+2、CheckOut  此方法用与检出操作
+2.1参数
+servicePath 服务器路径
+localPath 本地路径
+2.2返回值
+true or false 操作是否成功
+operSVN.lastErrMsg 失败的说明
+
+3、Update  此方法用与更新操作
+3.1参数
+path 本地路径
+3.2返回值
+true or false 操作是否成功
+operSVN.lastErrMsg 失败的说明
+
+4、Commit  此方法用与提交操作
+4.1参数
+path 本地路径
+4.2返回值
+true or false 操作是否成功
+operSVN.lastErrMsg 失败的说明
+
+4、GetLogFPath  此方法用与获取日志上的文件路径 
+4.1参数
+path 本地路径
+version 某个具体版本号
+action 操作   
+	可选值	None
+        Add 
+        Delete
+        Modify
+        Replace
+
+4.2返回值
+list<string> 路径字符串集合
+operSVN.lastErrMsg 失败的说明
+
+4、GetLogFPath  此方法是GetLog方法的重载, 用于获得某个版本号到某个版本号之间的文件路径
+4.1参数
+path 本地路径
+startVersion 开始版本号
+endVersion 结束版本号
+action 操作   
+	可选值	None
+        Add 
+        Delete
+        Modify
+        Replace
+
+4.2返回值
+list<string> 路径字符串集合
+operSVN.lastErrMsg 失败的说明
+注：版本号为包含关系
+
+
+
