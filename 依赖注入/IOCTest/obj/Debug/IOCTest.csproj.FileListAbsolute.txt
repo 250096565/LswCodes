@@ -1,0 +1,12 @@
+J:\Codes\LswCodes\依赖注入\IOCTest\bin\Debug\IOCTest.exe.config
+J:\Codes\LswCodes\依赖注入\IOCTest\bin\Debug\IOCTest.exe
+J:\Codes\LswCodes\依赖注入\IOCTest\bin\Debug\IOCTest.pdb
+J:\Codes\LswCodes\依赖注入\IOCTest\obj\Debug\IOCTest.csprojResolveAssemblyReference.cache
+J:\Codes\LswCodes\依赖注入\IOCTest\obj\Debug\IOCTest.exe
+J:\Codes\LswCodes\依赖注入\IOCTest\obj\Debug\IOCTest.pdb
+J:\Codes\LswCodes\依赖注入\IOCTest\bin\Debug\Autofac.Configuration.dll
+J:\Codes\LswCodes\依赖注入\IOCTest\bin\Debug\Autofac.dll
+J:\Codes\LswCodes\依赖注入\IOCTest\bin\Debug\Autofac.pdb
+J:\Codes\LswCodes\依赖注入\IOCTest\bin\Debug\Autofac.xml
+J:\Codes\LswCodes\依赖注入\IOCTest\bin\Debug\Autofac.Configuration.pdb
+J:\Codes\LswCodes\依赖注入\IOCTest\bin\Debug\Autofac.Configuration.xml
