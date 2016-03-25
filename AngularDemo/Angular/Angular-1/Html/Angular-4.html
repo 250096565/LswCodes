@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="../scripts/angular.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body ng-app="myApp">
+    <!--自定义指令-->
+    <my-zhiling></my-zhiling>
+    <div my-zhiling></div>
+    <script>
+        var app = angular.module("myApp", []);  
+        app.directive("myZhiling", function () {
+            return {
+                restrict: "AE",
+                template: "<h1>哈哈哈!</h1>"
+            };
+        });
+    </script>
+</body>
+</html>

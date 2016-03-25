@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="Html\Angualr-3.html" />
     <Content Include="Html\Angular-2.html" />
+    <Content Include="Html\Angular-4.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
