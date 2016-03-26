@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../scripts/angular.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <!--验证用户输入-->
+    <!--<form ng-app="" name="userInfo">
+        邮箱：
+        <input type="email" name="emailAddress" ng-model="text" />
+        <span ng-show="userInfo.emailAddress.$error.email">不是一个合法邮箱地址</span>
+    </form>-->
+
+
+    <form ng-app="" name="userInfo" ng-init="myText = 'HaiFeng@live.com'">
+        Email:
+        <input type="email" name="emailAddress" ng-model="myText" required>
+        <h1>状态</h1>
+        合法 {{userInfo.emailAddress.$valid}}
+        有填写记录   {{userInfo.emailAddress.$dirty}}
+        失去焦点 {{userInfo.emailAddress.$touched}}
+        错误 {{userInfo.emailAddress.$error}}
+        没有填写记录 {{userInfo.emailAddress.$pristine}}
+        错误 {{userInfo.emailAddress.$invalid}}
+    </form>
+    <style>
+        <!--失去焦点时文本框为灰色-->
+        input.ng-touched {
+            background-color: darkgrey;
+        }
+   </style>
+</body>
+</html>

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="myapp">
+<html ng-app="myApp">
 <head>
     <title></title>
     <meta charset="utf-8">
@@ -63,6 +63,21 @@
             </li>
         </ul>
     </div>
+
+    <!--自定义指令-->
+    <my-zhiling></my-zhiling>
+    <div my-zhiling></div>
+    <script>
+        var app = angular.module("myApp", []);
+        app.directive("myZhiling", function () {
+            return {
+                restrict: "AE",
+                template: "<h1>哈哈哈!</h1>"
+            };
+        });
+    </script>
+
+
 
 
   

@@ -5,18 +5,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
 </head>
-<body ng-app="myApp">
-    <!--自定义指令-->
-    <my-zhiling></my-zhiling>
-    <div my-zhiling></div>
-    <script>
-        var app = angular.module("myApp", []);  
-        app.directive("myZhiling", function () {
-            return {
-                restrict: "AE",
-                template: "<h1>哈哈哈!</h1>"
-            };
-        });
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <p>你的名称</p>
+        <input ng-model="name" />
+        <hr />
+        <!--双向绑定-->
+        你输入了 {{name}}
+    </div>
+
+    <script type="text/javascript">
+        //使用控制器初始化元素
+        var app = angular.module("myApp", []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.name = "天涯的海风";
+        })
     </script>
 </body>
 </html>
