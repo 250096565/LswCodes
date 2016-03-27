@@ -15,7 +15,7 @@
     </form>-->
 
 
-    <form ng-app="" name="userInfo" ng-init="myText = 'HaiFeng@live.com'">
+<form ng-app="" name="userInfo" ng-init="myText = 'HaiFeng@live.com'">
         Email:
         <input type="email" name="emailAddress" ng-model="myText" required>
         <h1>状态</h1>
@@ -24,7 +24,7 @@
         失去焦点 {{userInfo.emailAddress.$touched}}
         错误 {{userInfo.emailAddress.$error}}
         没有填写记录 {{userInfo.emailAddress.$pristine}}
-        错误 {{userInfo.emailAddress.$invalid}}
+    错误 {{userInfo.emailAddress.$invalid}}
     </form>
     <style>
         <!--失去焦点时文本框为灰色-->
