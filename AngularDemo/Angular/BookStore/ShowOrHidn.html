@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <script src="App/framework/angular.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript">
+        var app = angular.module('app', []);
+        app.controller('ctrl', function ($scope) {
+            //初始不显示
+            $scope.menu = { status: false };
+            $scope.toggle = function () {
+                $scope.menu.status = !$scope.menu.status;
+            };
+        });
+    </script>
+</head>
+<body>
+    <div ng-controller="ctrl">
+        <button ng-click="toggle()">点我就好</button>
+        <ul ng-show="menu.status">
+            <li>鬼话三国</li>
+            <li>佛本是道</li>
+            <li>该睡觉了</li>
+        </ul>
+    </div>
+</body>
+</html>

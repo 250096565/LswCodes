@@ -66,6 +66,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\css\bootstrap.css" />
+    <Content Include="App\js\driectives.js" />
+    <Content Include="App\js\filters.js" />
+    <Content Include="App\js\services.js" />
+    <Content Include="Form.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -83,13 +88,14 @@
     <Content Include="App\js\controllers.js" />
     <Content Include="App\tpls\BookList.html" />
     <Content Include="App\tpls\Hello.html" />
+    <Content Include="ShowOrHidn.html" />
+    <Content Include="ToggleClass.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\css\" />
     <Folder Include="App\imgs\" />
   </ItemGroup>
   <PropertyGroup>

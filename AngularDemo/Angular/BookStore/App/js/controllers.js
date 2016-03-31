@@ -4,10 +4,10 @@ bookStoreCtrls.controller('HelloCtrl', function ($scope) {
     $scope.name = "LSW";
 });
 
-bookStoreCtrls.controller('BoolListCtrl', function ($scope) {
+bookStoreCtrls.controller('BookListCtrl', function ($scope) {
     $scope.books = [
         { title: "围城", author: "钱钟书" },
-        { title: "嫌疑人X的献身", author: "东野圭吾" },
+        { title: "鬼话三国", author: "寒雨潇风" },
         { title: "白夜行", author: "东野圭吾" },
         { title: "山海经", author: "郭璞" }
     ];
