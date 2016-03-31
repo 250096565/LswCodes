@@ -1,0 +1,41 @@
+﻿
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="/scripts/angular.min.js"></script>
+</head>
+<body>
+
+    <!--AngularJS应用-->
+
+    <div ng-app="oneApp" ng-controller="oneController">
+        姓名<input type="text" ng-model="name" placeholder="测试而已" /><br />
+        年龄<input type="text" ng-model="age" placeholder="测试而已" /><br />
+        <br />
+        此人信息  {{name + " " + age}}
+    </div>
+
+
+
+    <script type="text/javascript">
+        var app = angular.module('oneApp', []);
+
+        app.controller('oneController', function ($scope) {
+            $scope.name = "风筝";
+            $scope.age = "21";
+        })
+
+    </script>
+
+
+
+   
+
+</body>
+</html>
+
+
+
+
+
