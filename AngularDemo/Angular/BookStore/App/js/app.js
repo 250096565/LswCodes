@@ -1,4 +1,4 @@
-﻿var bookStoreApp = angular.module("bookStoreApp", ['ngRoute', 'ngAnimate', 'bookStoreCtrls', 'bookStoreFilters', 'bookStoreService', 'bookStoreDriectives']);
+﻿var bookStoreApp = angular.module("bookStoreApp", ['ngRoute', 'ngAnimate', 'bookStoreCtrls', 'bookStoreFilters', 'bookStoreServices', 'bookStoreDriectives']);
 //var bookStoreApp = angular.module("bookStoreApp", ['ngRoute', 'ngAnimate', 'bookStoreCtrls']);
 
 //注册路由
