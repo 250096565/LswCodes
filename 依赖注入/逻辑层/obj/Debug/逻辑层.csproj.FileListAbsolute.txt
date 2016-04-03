@@ -1,0 +1,9 @@
+J:\Codes\LswCodes\依赖注入\逻辑层\bin\Debug\逻辑层.dll
+J:\Codes\LswCodes\依赖注入\逻辑层\bin\Debug\逻辑层.pdb
+J:\Codes\LswCodes\依赖注入\逻辑层\bin\Debug\实体层.dll
+J:\Codes\LswCodes\依赖注入\逻辑层\bin\Debug\服务层.dll
+J:\Codes\LswCodes\依赖注入\逻辑层\bin\Debug\实体层.pdb
+J:\Codes\LswCodes\依赖注入\逻辑层\bin\Debug\服务层.pdb
+J:\Codes\LswCodes\依赖注入\逻辑层\obj\Debug\逻辑层.csprojResolveAssemblyReference.cache
+J:\Codes\LswCodes\依赖注入\逻辑层\obj\Debug\逻辑层.dll
+J:\Codes\LswCodes\依赖注入\逻辑层\obj\Debug\逻辑层.pdb
