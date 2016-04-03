@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\css\bootstrap.css" />
+    <Content Include="App\css\index.css" />
     <Content Include="App\js\driectives.js" />
     <Content Include="App\js\filters.js" />
     <Content Include="App\js\services.js" />

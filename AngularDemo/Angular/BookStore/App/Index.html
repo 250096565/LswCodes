@@ -2,6 +2,7 @@
 <html ng-app="bookStoreApp">
 <head>
     <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <script src="framework/angular.js"></script>
     <script src="framework/angular-animate.js"></script>
     <script src="framework/angular-route.js"></script>
@@ -15,6 +16,6 @@
     <meta charset="utf-8" />
 </head>
 <body>
-    <div ng-view></div>
+    <div class="page {{pageClass}}" ng-view></div>
 </body>
 </html>
