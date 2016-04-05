@@ -66,6 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="20160405\js\指令.js" />
+    <Content Include="20160405\tpls\hello.html" />
+    <Content Include="20160405\指令.html" />
     <Content Include="App\css\index.css" />
     <Content Include="App\js\driectives.js" />
     <Content Include="App\js\filters.js" />
