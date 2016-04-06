@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,11 @@ namespace IOCTest
         static void Main(string[] args)
         {
             InitIOC();
+
+
             var lsw = _container.Resolve<GetLSW>();
+
+
             List<Person> per = lsw.Get();
             foreach (var VARIABLE in per)
             {
@@ -30,7 +35,7 @@ namespace IOCTest
             var builder = new ContainerBuilder();
             //以接口的方式注册 
             //实例一
-           // builder.RegisterType<GetLSWbyHome>().AsImplementedInterfaces();
+            // builder.RegisterType<GetLSWbyHome>().AsImplementedInterfaces();
             //实例二
             builder.RegisterType<GetLSWbyWork>().AsImplementedInterfaces();
             builder.RegisterType<GetLSW>();
