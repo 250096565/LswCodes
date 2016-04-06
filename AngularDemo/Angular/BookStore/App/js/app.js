@@ -6,6 +6,7 @@ bookStoreApp.config(function ($routeProvider) {
     $routeProvider.when('/Hello', {
         templateUrl: "/App/tpls/Hello.html",
         controller: "HelloCtrl"
+
     }).when('/Books', {
         templateUrl: "/App/tpls/BookList.html",
         controller: "BookListCtrl"

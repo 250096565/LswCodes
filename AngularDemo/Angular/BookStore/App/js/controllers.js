@@ -2,6 +2,7 @@
 
 bookStoreCtrls.controller('HelloCtrl', function ($scope) {
     $scope.name = "LSW";
+    $scope.pageClass = "hello";
 });
 
 bookStoreCtrls.controller('BookListCtrl', function ($scope) {
@@ -11,4 +12,5 @@ bookStoreCtrls.controller('BookListCtrl', function ($scope) {
         { title: "白夜行", author: "东野圭吾" },
         { title: "山海经", author: "郭璞" }
     ];
+    $scope.pageClass = "list";
 });
