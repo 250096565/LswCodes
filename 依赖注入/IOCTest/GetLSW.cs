@@ -18,11 +18,11 @@ namespace IOCTest
             this.finder = finder;
         }
 
-        public Person Get()
+        public List<Person> Get()
         {
             var list = finder.FindAll();
 
-            return list.Where(o => o.Name == "梁士伟").FirstOrDefault();
+            return list.Where(o => o.Name == "梁士伟").ToList();
         }
 
 
@@ -56,7 +56,7 @@ namespace IOCTest
             return new List<Person>() {
                new Person { Name="天涯的海风"},
                new Person { Name="风铃"},
-               new Person { Name="梁士伟"}
+               new Person { Name="梁士伟"}, new Person { Name="梁士伟"}
            };
         }
     }
