@@ -3,3 +3,8 @@ J:\Codes\LswCodes\依赖注入\实体层\bin\Debug\实体层.pdb
 J:\Codes\LswCodes\依赖注入\实体层\obj\Debug\实体层.csprojResolveAssemblyReference.cache
 J:\Codes\LswCodes\依赖注入\实体层\obj\Debug\实体层.dll
 J:\Codes\LswCodes\依赖注入\实体层\obj\Debug\实体层.pdb
+E:\codes\LswCodes\依赖注入\实体层\bin\Debug\实体层.dll
+E:\codes\LswCodes\依赖注入\实体层\bin\Debug\实体层.pdb
+E:\codes\LswCodes\依赖注入\实体层\obj\Debug\实体层.csprojResolveAssemblyReference.cache
+E:\codes\LswCodes\依赖注入\实体层\obj\Debug\实体层.dll
+E:\codes\LswCodes\依赖注入\实体层\obj\Debug\实体层.pdb
