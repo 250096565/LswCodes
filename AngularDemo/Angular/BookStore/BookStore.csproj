@@ -108,6 +108,7 @@
     <Content Include="PublicJs\jquery-2.0.0.min.js" />
     <Content Include="PublicJs\ui-bootstrap-tpls-0.11.0.js" />
     <Content Include="指令\指令交互.html" />
+    <Content Include="指令\绑定策略.html" />
     <None Include="Properties\PublishProfiles\LSW.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
