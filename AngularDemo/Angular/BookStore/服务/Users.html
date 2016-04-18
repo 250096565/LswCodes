@@ -15,7 +15,7 @@
             }).error(function () { console.log("失败"); });
 
 
-            $http({
+           /* $http({
                 method: "Get",
                 url: "Data/.ashx?action=GetUser"
             }).success(function (data, status, headers, config) {
@@ -28,7 +28,7 @@
                 alert(status);
                 alert(headers);
                 alert(config);
-            });
+            });*/
         });
         //自己的服务,可以注入其它的服务
         app.factory("userListService", function ($http) {
@@ -41,6 +41,7 @@
                 }
             }
         });
+
 
         app.controller("MyService", function ($scope, $timeout, userListService) {
             var timeout;

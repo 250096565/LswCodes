@@ -42,3 +42,7 @@ E:\codes\LswCodes\AngularDemo\Angular\BookStore\bin\ComomHelper.dll
 E:\codes\LswCodes\AngularDemo\Angular\BookStore\bin\Newtonsoft.Json.dll
 E:\codes\LswCodes\AngularDemo\Angular\BookStore\bin\ComomHelper.pdb
 E:\codes\LswCodes\AngularDemo\Angular\BookStore\bin\Newtonsoft.Json.xml
+J:\Codes\LswCodes\AngularDemo\Angular\BookStore\bin\ComomHelper.dll
+J:\Codes\LswCodes\AngularDemo\Angular\BookStore\bin\Newtonsoft.Json.dll
+J:\Codes\LswCodes\AngularDemo\Angular\BookStore\bin\ComomHelper.pdb
+J:\Codes\LswCodes\AngularDemo\Angular\BookStore\bin\Newtonsoft.Json.xml
