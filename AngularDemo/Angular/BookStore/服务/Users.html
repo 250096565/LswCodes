@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <script src="../PublicJs/angular.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        var app = angular.module("MyApp",[]);
+        app.controller("UserController", function ($scope, $http) {
+            $http.get("data/user.json").success(function (response) {
+                console.log("成功");
+                $scope.users = response;
+            }).error(function () { console.log("失败"); });
+        });
+    </script>
+</head>
+<body>
+    <div ng-controller="UserController">
+        <ul>
+            <li ng-repeat="user in users">
+                {{user.name}}
+            </li>
+        </ul> v
+
+    </div>
+</body>
+</html>
