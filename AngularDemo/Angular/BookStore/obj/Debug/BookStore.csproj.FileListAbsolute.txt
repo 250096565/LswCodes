@@ -38,3 +38,7 @@ E:\codes\LswCodes\AngularDemo\Angular\BookStore\bin\Microsoft.CodeDom.Providers.
 E:\codes\LswCodes\AngularDemo\Angular\BookStore\obj\Debug\BookStore.csprojResolveAssemblyReference.cache
 E:\codes\LswCodes\AngularDemo\Angular\BookStore\obj\Debug\BookStore.dll
 E:\codes\LswCodes\AngularDemo\Angular\BookStore\obj\Debug\BookStore.pdb
+E:\codes\LswCodes\AngularDemo\Angular\BookStore\bin\ComomHelper.dll
+E:\codes\LswCodes\AngularDemo\Angular\BookStore\bin\Newtonsoft.Json.dll
+E:\codes\LswCodes\AngularDemo\Angular\BookStore\bin\ComomHelper.pdb
+E:\codes\LswCodes\AngularDemo\Angular\BookStore\bin\Newtonsoft.Json.xml

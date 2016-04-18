@@ -6,12 +6,58 @@
     <title></title>
     <meta charset="utf-8" />
     <script type="text/javascript">
-        var app = angular.module("MyApp",[]);
+        var app = angular.module("MyApp", []);
         app.controller("UserController", function ($scope, $http) {
-            $http.get("data/user.json").success(function (response) {
+
+            $http.get("Data.ashx?action=GetUser").success(function (response) {
                 console.log("成功");
-                $scope.users = response;
+                $scope.users = response.Data;
             }).error(function () { console.log("失败"); });
+
+
+            $http({
+                method: "Get",
+                url: "Data/.ashx?action=GetUser"
+            }).success(function (data, status, headers, config) {
+                console.log("成功");
+                alert(status);
+                alert(headers);
+                alert(config);
+                $scope.users = data.Data;
+            }).error(function (data, status, headers, config) {
+                alert(status);
+                alert(headers);
+                alert(config);
+            });
+        });
+        //自己的服务,可以注入其它的服务
+        app.factory("userListService", function ($http) {
+            var doRequest = function () {
+                return $http.get("Data.ashx?action=GetUser");
+            };
+            return {
+                users: function () {
+                    return doRequest();
+                }
+            }
+        });
+
+        app.controller("MyService", function ($scope, $timeout, userListService) {
+            var timeout;
+            $scope.$watch("uName", function (newuName) {
+                if (newuName) {
+                    if (timeout) {
+                        $timeout.cancel(timeout);
+                    }
+
+                    timeout = $timeout(function () {
+                        userListService.users().success(function (data, status) {
+                            $scope.users = data.Data;
+                        });
+                    }, 2000);
+
+                };
+            });
         });
     </script>
 </head>
@@ -19,10 +65,18 @@
     <div ng-controller="UserController">
         <ul>
             <li ng-repeat="user in users">
-                {{user.name}}
+                {{user.Name}}
             </li>
-        </ul> v
+        </ul>
+    </div>
 
+    <div ng-controller="MyService">
+        <input type="text" ng-model="uName" placeholder="请输入用户名" />
+        <ul ng-show="uName">
+            <li ng-repeat="user in users">
+                {{user.Name}}
+            </li>
+        </ul>
     </div>
 </body>
 </html>

@@ -124,6 +124,8 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="服务\data\user.json" />
+    <Content Include="服务\Data.ashx" />
+    <Content Include="服务\BaseHandler.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\framework\angular-animate.js" />
@@ -162,10 +164,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="服务\BaseHandler.ashx.cs">
+      <DependentUpon>BaseHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="服务\Data.ashx.cs">
+      <DependentUpon>Data.ashx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\imgs\" />
     <Folder Include="routeApp\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComomHelper\ComomHelper.csproj">
+      <Project>{df555265-561c-4e7b-9124-85516e5fac67}</Project>
+      <Name>ComomHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
