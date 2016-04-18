@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <link href="../css/ExpanderSimple.css" rel="stylesheet" />
+    <script src="../../PublicJs/angular.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        var app = angular.module("myApp", []);
+        app.directive("expander", function () {
+            return {
+                restrict: "AE",
+                replace: true,
+                transclude: true,
+                scope: {
+                    title: "=expanderTitle"
+                },
+                template: "<div>" +
+                    "<div class='title' ng-click='toggle()'>{{title}}</div>" +
+                    "<div class='body' ng-show='showMe' ng-transclude></div>" +
+                    "</div>",
+                link: function (scope, element, attrs) {
+                    scope.showMe = false;
+                    scope.toggle = function () {
+                        scope.showMe = !scope.showMe;
+                    };
+                }
+            };
+
+        });
+    
+        app.controller("SomeController", function ($scope) {
+            $scope.title = '点击展开';
+            $scope.text = '这里是内部的内容。';
+        });
+    </script>
+</head>
+<body>
+    <div ng-controller='SomeController'>
+        <expander class='expander' expander-Title="title">
+            {{text}}
+        </expander>
+    </div>
+</body>
+</html>

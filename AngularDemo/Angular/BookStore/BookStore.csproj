@@ -66,6 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="指令\css\Accordion.css" />
+    <Content Include="指令\css\ExpanderSimple.css" />
     <Content Include="指令\js\directiveJH.js" />
     <Content Include="指令\js\指令.js" />
     <Content Include="指令\tpls\hello.html" />
@@ -108,6 +110,11 @@
     <Content Include="PublicJs\jquery-2.0.0.min.js" />
     <Content Include="PublicJs\ui-bootstrap-tpls-0.11.0.js" />
     <Content Include="指令\指令交互.html" />
+    <Content Include="指令\指令练习\UI菜单.html" />
+    <Content Include="指令\指令练习\多级菜单.html" />
+    <Content Include="指令\绑定策略.html" />
+    <Content Include="指令\自带指令\Form.html" />
+    <Content Include="指令\指令练习\菜单效果.html" />
     <None Include="Properties\PublishProfiles\LSW.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
