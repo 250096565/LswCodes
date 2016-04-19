@@ -1,0 +1,6 @@
+J:\Codes\LswCodes\AngularDemo\Angular\library\bin\library.dll.config
+J:\Codes\LswCodes\AngularDemo\Angular\library\bin\library.dll
+J:\Codes\LswCodes\AngularDemo\Angular\library\bin\library.pdb
+J:\Codes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.csprojResolveAssemblyReference.cache
+J:\Codes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.dll
+J:\Codes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.pdb
