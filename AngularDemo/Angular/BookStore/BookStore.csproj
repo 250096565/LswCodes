@@ -116,6 +116,7 @@
     <Content Include="指令\自带指令\Form.html" />
     <Content Include="指令\指令练习\菜单效果.html" />
     <Content Include="服务\Users.html" />
+    <Content Include="过滤器\filter.html" />
     <None Include="Properties\PublishProfiles\LSW.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

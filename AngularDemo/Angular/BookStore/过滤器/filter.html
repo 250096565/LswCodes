@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <script src="../PublicJs/angular.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        var app = angular.module("myapp", []);
+        app.controller("ctrl", function ($scope) {
+            $scope.childrenArray = [
+          { name: 'kimi', age: 3 },
+          { name: 'cindy', age: 4 },
+          { name: 'anglar', age: 4 },
+          { name: 'shitou', age: 6 },
+          { name: 'tiantian', age: 5 }
+            ];
+            $scope.dateTime = "2016";
+            $scope.func = function (e) { return e.age > 4; }
+            $scope.jsonStr = { "firstName": "John", "lastName": "Doe" };
+            $scope.limitStr = "1234678";
+        });
+
+        app.filter("myFilter", function () {
+            return function (temp) {
+                return temp + "随风";
+            };
+        });
+
+    </script>
+</head>
+<body>
+    <div ng-controller="ctrl">
+        <!--货币-->货币
+        {{192 | currency:'￥'}}<br /><br />
+        <!--时间 -->时间
+        {{dateTime | date:'yyyy'}}<br /><br />
+        <!--过滤子串-->过滤子串
+        {{ childrenArray | filter : 'a' }}<br /><br />
+        {{ childrenArray | filter : 4 }}<br /><br />
+        {{ childrenArray | filter : {name : 'i'} }}<br /><br />
+        {{childrenArray | filter : func }}<br /><br />
+        <!--json字符串-->json字符串
+        {{jsonStr | json}}<br /><br />
+        <!--限制长度-->限制长度
+        {{limitStr | limitTo:5}}<br /><br />
+        <!--格式化数值-->格式化数值
+        {{123.4567890 | number:2}}<br /><br />
+        <!--排序-->排序
+        {{childrenArray | orderBy :'-age'}}<br/><br/>
+        <!--自定义-->
+        {{'往事' | myFilter}}
+    </div>
+</body>
+</html>
