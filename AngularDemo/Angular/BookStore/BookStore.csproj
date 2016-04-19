@@ -136,29 +136,6 @@
     <Content Include="App\js\controllers.js" />
     <Content Include="App\tpls\BookList.html" />
     <Content Include="App\tpls\Hello.html" />
-    <Content Include="routeApp\css\index.css" />
-    <Content Include="routeApp\tpls2\about.html" />
-    <Content Include="routeApp\tpls2\home-list.html" />
-    <Content Include="routeApp\tpls2\home.html" />
-    <Content Include="routeApp\tpls2\table-data.html" />
-    <Content Include="routeApp\tpls3\addusertypeform.html" />
-    <Content Include="routeApp\tpls3\highendusers.html" />
-    <Content Include="routeApp\tpls3\home.html" />
-    <Content Include="routeApp\tpls3\index.html" />
-    <Content Include="routeApp\tpls3\lowusers.html" />
-    <Content Include="routeApp\tpls3\normalusers.html" />
-    <Content Include="routeApp\tpls3\topbar.html" />
-    <Content Include="routeApp\tpls3\usermng.html" />
-    <Content Include="routeApp\tpls\state1.html" />
-    <Content Include="routeApp\tpls\state1.list.html" />
-    <Content Include="routeApp\tpls\state2.html" />
-    <Content Include="routeApp\tpls\state2.list.html" />
-    <Content Include="routeApp\UIRoute1.html" />
-    <Content Include="routeApp\js\UIRoute1.js" />
-    <Content Include="routeApp\UIRoute2.html" />
-    <Content Include="routeApp\js\UIRoute2.js" />
-    <Content Include="routeApp\UIRoute3.html" />
-    <Content Include="routeApp\js\UIRoute3.js" />
     <Content Include="ShowOrHidn.html" />
     <Content Include="ToggleClass.html" />
     <Content Include="Web.config" />
@@ -174,7 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\imgs\" />
-    <Folder Include="routeApp\img\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ComomHelper\ComomHelper.csproj">
