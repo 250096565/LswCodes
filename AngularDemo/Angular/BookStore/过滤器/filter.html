@@ -15,7 +15,7 @@
           { name: 'shitou', age: 6 },
           { name: 'tiantian', age: 5 }
             ];
-            $scope.dateTime = "2016";
+            $scope.dateTime = 2016;
             $scope.func = function (e) { return e.age > 4; }
             $scope.jsonStr = { "firstName": "John", "lastName": "Doe" };
             $scope.limitStr = "1234678";
@@ -34,7 +34,8 @@
         <!--货币-->货币
         {{192 | currency:'￥'}}<br /><br />
         <!--时间 -->时间
-        {{dateTime | date:'yyyy'}}<br /><br />
+        {{dateTime}}
+        {{1448864369815 | date:'yyyy'}}<br /><br />
         <!--过滤子串-->过滤子串
         {{ childrenArray | filter : 'a' }}<br /><br />
         {{ childrenArray | filter : 4 }}<br /><br />
