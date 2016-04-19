@@ -11,5 +11,6 @@ namespace StudyABP.Sessions
     public interface ISessionAppService : IApplicationService
     {
         Task<GetCurrentLoginInformationsOutput> GetCurrentLoginInformations();
+        
     }
 }

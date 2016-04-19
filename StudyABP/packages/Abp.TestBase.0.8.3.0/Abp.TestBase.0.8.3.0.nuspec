@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Abp.TestBase</id>
+    <version>0.8.3.0</version>
+    <title>Abp.TestBase</title>
+    <authors>Halil İbrahim Kalkan</authors>
+    <owners>Halil İbrahim Kalkan</owners>
+    <projectUrl>http://www.aspnetboilerplate.com/</projectUrl>
+    <iconUrl>http://www.aspnetboilerplate.com/images/abp_nupkg.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ASP.NET Boilerplate test base. Used to build unit/integration tests for projects using ASP.NET Boilerplate</description>
+    <tags>asp.net boilerplate mvc application web framework domain driven design dependency injection unit test integration</tags>
+    <dependencies>
+      <dependency id="Castle.Windsor" version="3.3.0" />
+      <dependency id="Abp" version="0.8.3" />
+    </dependencies>
+  </metadata>
+</package>

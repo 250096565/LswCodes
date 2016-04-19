@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>EntityFramework.DynamicFilters</id>
+    <version>1.4.7</version>
+    <title>Entity Framework Dynamic/Global Filters</title>
+    <authors>John Cachat</authors>
+    <owners>John Cachat</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/jcachat/EntityFramework.DynamicFilters</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides global &amp; scoped filters for Entity Framework with dynamic filter parameters that are evaluated at query execution.  Supports use cases such as Multi-Tenancy and Soft Deletes.</description>
+    <summary />
+    <releaseNotes>Full Change Log: https://github.com/jcachat/EntityFramework.DynamicFilters/blob/master/src/CHANGELOG.TXT
+
+1.4.0: Added support for Oracle using the Official Oracle ODP.NET, Managed Entity Framework Driver
+1.4.1: Set parameter value to DBNull if dynamic parameter not found.  Fixes problem with PostgreSQL.
+1.4.2: Fixed null reference exception when using Contains/IEnumerable and logger not attached to Database context
+1.4.3: Fixed issue handling null constants in expressions
+1.4.4: Added support for bitwise operators And/&amp;, Or/|, and Xor/^
+1.4.5: Fixed handling of "!Contains(x)"
+1.4.6: Rebuild to fix UNC paths and slow startup when trying to load debug symbols
+1.4.7: Added GetFilterParameterValue method for unnamed parameter</releaseNotes>
+    <copyright>2016 John Cachat</copyright>
+    <language />
+    <tags>Entity Framework Global Dynamic Filters</tags>
+    <dependencies>
+      <dependency id="EntityFramework" version="6.1.1" />
+    </dependencies>
+  </metadata>
+</package>
