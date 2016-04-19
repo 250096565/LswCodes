@@ -3,6 +3,7 @@ using System.Reflection;
 using Abp.Modules;
 using Abp.Zero.EntityFramework;
 using StudyABP.EntityFramework;
+using StudyABP.Migrations;
 
 namespace StudyABP
 {

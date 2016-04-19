@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Abp.AutoMapper</id>
+    <version>0.8.3.0</version>
+    <title>Abp.AutoMapper</title>
+    <authors>Halil İbrahim Kalkan</authors>
+    <owners>Halil İbrahim Kalkan</owners>
+    <projectUrl>http://www.aspnetboilerplate.com/</projectUrl>
+    <iconUrl>http://www.aspnetboilerplate.com/images/abp_nupkg.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AutoMapper integration package for ASP.NET Boilerplate.</description>
+    <tags>asp.net boilerplate mvc application web framework domain driven design dependency injection automapper mapper</tags>
+    <dependencies>
+      <dependency id="AutoMapper" version="3.3.1" />
+      <dependency id="Castle.Core" version="3.3.3" />
+      <dependency id="Abp" version="0.8.3" />
+    </dependencies>
+  </metadata>
+</package>
