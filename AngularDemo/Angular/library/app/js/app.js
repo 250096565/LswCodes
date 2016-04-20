@@ -10,6 +10,7 @@ var app = angular.module("bookStore", ['ui.router']);
  * @return {[type]}
  */
 
+
 app.run(function ($rootScope, $state, $stateParams) {
     $rootScope.$state = $state;
     $rootScope.$stateParams = $state;
@@ -31,15 +32,30 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         .state("Login", {
             url: "/Login",
             templateUrl: "/app/tpls/Login.html"
-        })
-        .state("Index", {
-            url: "/Index",
+        }).state('index', {
+            url: '/Index',
             views: {
-                "": {
-                    templateUrl: 'tpls/Home.html'
+                '': {
+                    templateUrl: '/app/tpls/Home.html'
                 },
-                "main@Index": {
-                    templateUrl: 'tpls/Login.html'
+                'topBar@index': {
+                    templateUrl: '/app/tpls/topBar.html'
+                },
+                'main@index': {
+                    templateUrl: '/app/tpls/Main.html'
+                }
+            }
+        }).state('index.library', {
+            url: '/library',
+            views: {
+                'main@index': {
+                    templateUrl: '/app/tpls/library.html'
+                },
+                "bookType@index.library": {
+                    templateUrl: '/app/tpls/BookType.html'
+                },
+                "bookGrid@index.library": {
+                    templateUrl: '/app/tpls/BookGrid.html'
                 }
             }
         });
