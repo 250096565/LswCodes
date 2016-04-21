@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="handlers\Books.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -79,8 +80,11 @@
     <Content Include="app\img\jyzhd.png" />
     <Content Include="app\img\wc.png" />
     <Content Include="app\js\app.js" />
+    <Content Include="app\js\controller.js" />
     <Content Include="app\js\jquery.backstretch.min.js" />
     <Content Include="app\js\scripts.js" />
+    <Content Include="app\js\services.js" />
+    <Content Include="app\tpls\addBookForm.html" />
     <Content Include="app\tpls\BookGrid.html" />
     <Content Include="app\tpls\BookType.html" />
     <Content Include="app\tpls\Home.html" />
@@ -101,10 +105,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="handlers\Books.ashx.cs">
+      <DependentUpon>Books.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComomHelper\ComomHelper.csproj">
+      <Project>{DF555265-561C-4E7B-9124-85516E5FAC67}</Project>
+      <Name>ComomHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

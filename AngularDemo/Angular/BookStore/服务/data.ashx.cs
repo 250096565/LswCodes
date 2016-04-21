@@ -9,7 +9,7 @@ namespace BookStore.服务
     /// <summary>
     /// Data 的摘要说明
     /// </summary>
-    public class Data : BaseHandler
+    public class Data : ComomHelper.BaseHandler
     {
         public void GetUser(HttpContext context)
         {
