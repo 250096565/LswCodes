@@ -14,18 +14,23 @@ bookListmodule.controller("BookListCtrl", function ($scope, $http, $state, $stat
     };
     //这是总数吧
     $scope.totalServerItems = 0;
+    $scope.pagingOptions = {
+        pageSizes: [5, 10, 20],
+        pageSize: 10,
+        currentPage: 1
+    };
 
     //设置值
     $scope.setPagingData = function (data, page, pageSize) {
-        var pagedData = data.slice((page - 1) * pageSize, page * pageSize);
+        var pagedData =data.slice((page - 1) * pageSize, page * pageSize);
         $scope.books = pagedData;
         $scope.totalServerItems = data.length;
+
         if (!$scope.$$phase) {
             $scope.$apply();
         }
     };
-    //看看现在传的什么
-    console.log($stateParams);
+
 
     $scope.getPagedDataAsync = function (pageSize, page, searchText) {
         setTimeout(function () {
@@ -33,7 +38,8 @@ bookListmodule.controller("BookListCtrl", function ($scope, $http, $state, $stat
             if (searchText) {
                 //如果有值则搜索
                 var ft = searchText.toLowerCase();
-                loadBookListService.BookList($stateParams.bookType).success(function (data, status) {
+                loadBookListService.BookList($stateParams.bookType).success(function (data) {
+
                     _data = data.Data.filter(function (item) {
                         return JSON.stringify(item).toLowerCase().indexOf(ft) != 1;
                     });
@@ -42,10 +48,10 @@ bookListmodule.controller("BookListCtrl", function ($scope, $http, $state, $stat
 
                 $scope.setPagingData(_data, page, pageSize);
             } else {
-                loadBookListService.BookList($stateParams.bookType).success(function (data, status) {
+                loadBookListService.BookList($stateParams.bookType).success(function (data) {
                     _data = data.Data;
+                    $scope.setPagingData(_data, page, pageSize);
                 });
-                $scope.setPagingData(_data, page, pageSize);
             }
         }, 100);
     };
@@ -83,7 +89,8 @@ bookListmodule.controller("BookListCtrl", function ($scope, $http, $state, $stat
         }, {
             field: 'Name',
             displayName: '书名',
-            enableCellEdit: true
+            enableCellEdit: true,
+            width: 220
         }, {
             field: 'Author',
             displayName: '作者',
@@ -91,18 +98,16 @@ bookListmodule.controller("BookListCtrl", function ($scope, $http, $state, $stat
             width: 220
         },
         {
-            field: 'Explain',
-            displayName: '描述',
+            field: 'Time',
+            displayName: '时间',
             enableCellEdit: true,
             width: 220
         },
         {
-            field: 'BookId',
-            displayName: '操作',
-            enableCellEdit: false,
-            sortable: false,
-            pinnable: false,
-            cellTemplate: '<div><a ui-sref="bookdetail({bookId:row.getProperty(col.field)})" id="{{row.getProperty(col.field)}}">详情</a></div>'
+            field: 'Explain',
+            displayName: '描述',
+            enableCellEdit: true,
+            width: 690
         }],
         enablePaging: true,
         showFooter: true,
@@ -110,5 +115,32 @@ bookListmodule.controller("BookListCtrl", function ($scope, $http, $state, $stat
         pagingOptions: $scope.pagingOptions,
         filterOptions: $scope.filterOptions
     };
+});
+
+
+bookListmodule.controller("addBookCtrl", function ($scope, $http) {
+
+    $scope.book = {
+        type: "1"
+    }
+    $scope.addBook = function () {
+
+        var book = new Object();
+
+        book.Name = $scope.book.name;
+        book.Author = $scope.book.author;
+        book.Type = $scope.book.type;
+        book.Explain = $scope.book.explain;
+
+        $http.post("/handlers/Books.ashx?action=Addbook&name=" + book.Name + "&author=" + book.Author + "&Type=" + book.Type + "&explain=" + book.Explain + "").success(function (data) {
+            if (data.Status != "1") {
+                alert("服务器繁忙,请稍后再试");
+            } else {
+                window.location.href = "/Index.html#/Index/0";
+            }
+        });
+    };
+
+
 });
 

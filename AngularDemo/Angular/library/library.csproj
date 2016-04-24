@@ -98,8 +98,8 @@
     <Content Include="publicJs\angular-animate.min.js" />
     <Content Include="publicJs\angular-ui-router.js" />
     <Content Include="publicJs\angular.min.js" />
-    <Content Include="publicJs\jquery-1.11.1.min.js" />
-    <Content Include="publicJs\jquery-1.9.1.js" />
+    <Content Include="publicJs\bootstrap.min.js" />
+    <Content Include="publicJs\jquery-2.2.0.min.js" />
     <Content Include="publicJs\ng-grid.debug.js" />
     <Content Include="publicJs\ui-bootstrap-tpls-0.11.0.js" />
     <Content Include="Web.config" />

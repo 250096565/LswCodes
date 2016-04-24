@@ -4,10 +4,20 @@
             <a href="javascript:void(0);" class="list-group-item active">
                 书籍类型
             </a>
-            <a ui-sref="booklist({bookType:0})" class="list-group-item">全部</a>
-            <a ui-sref="booklist({bookType:1})" class="list-group-item">C#</a>
-            <a ui-sref="booklist({bookType:2})" class="list-group-item">IOS</a>
-            <a ui-sref="booklist({bookType:4})" class="list-group-item">小说</a>
+            <a ui-sref="index.library({bookType:0})" class="list-group-item">全部</a>
+            <a ui-sref="index.library({bookType:1})" class="list-group-item">C#</a>
+            <a ui-sref="index.library({bookType:2})" class="list-group-item">IOS</a>
+            <a ui-sref="index.library({bookType:3})" class="list-group-item">小说</a>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-primary" ng-click="addBook()">有什么推荐的</button>
+            </div>
+        </div>
+    </div>
+</div><br/><br /><br />
+<div class="row">
+    <div class="col-md-12">
+        <div ui-view></div>
     </div>
 </div>

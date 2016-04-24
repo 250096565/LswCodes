@@ -13,7 +13,7 @@ var app = angular.module("bookStore", ['ui.router', 'ngGrid', 'BookListModule', 
 
 app.run(function ($rootScope, $state, $stateParams) {
     $rootScope.$state = $state;
-    $rootScope.$stateParams = $state;
+    $rootScope.$stateParams = $stateParams;
 });
 
 /**
@@ -49,7 +49,12 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/{bookType:[0-9]{1,4}}',
             views: {
                 'main@index': {
-                    templateUrl: '/app/tpls/library.html'
+                    templateUrl: '/app/tpls/library.html',
+                    controller: function ($scope, $state) {
+                        $scope.addBook = function () {
+                            $state.go("index.library.addBook");
+                        }
+                    }
                 },
                 "bookType@index.library": {
                     templateUrl: '/app/tpls/BookType.html'
@@ -58,5 +63,9 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                     templateUrl: '/app/tpls/BookGrid.html'
                 }
             }
+        }).state("index.library.addBook", {
+            url: "/addBook",
+            templateUrl: '/app/tpls/addBookForm.html'
+
         });
 });
