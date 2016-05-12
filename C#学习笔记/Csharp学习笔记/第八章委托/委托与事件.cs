@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using 第八章委托._12章匿名方法与迭代器;
 
 namespace 第八章委托
 {
@@ -21,6 +22,18 @@ namespace 第八章委托
             //移除
             goodman.MarryEvent -= new GoodMan.MarryHandler(f1.SendMessage);
             goodman.OnMarryEvent("下课来我办公室,小明就不要来了");
+
+
+
+
+            //--------------------------这里不是很友好,因为这里是入口点。。。-------------------------------
+
+            Persons pers = new Persons();
+            foreach (Person p in pers)
+            {
+                Console.WriteLine(p.Name);
+                ;
+            }
         }
 
     }
