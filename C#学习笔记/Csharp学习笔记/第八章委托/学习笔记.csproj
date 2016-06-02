@@ -49,6 +49,7 @@
     <Compile Include="18章动态类型\动态类型.cs" />
     <Compile Include="19章多线程\同步锁.cs" />
     <Compile Include="19章多线程\多线程-1.cs" />
+    <Compile Include="20章异步编程\异步编程1.cs" />
     <Compile Include="委托与事件.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="操作Word\Office.cs" />
