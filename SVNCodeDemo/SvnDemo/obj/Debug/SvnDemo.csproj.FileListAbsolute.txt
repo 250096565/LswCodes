@@ -11,3 +11,6 @@ E:\MyCode\SVNCodeDemo\SvnDemo\obj\Debug\SvnDemo.exe
 E:\MyCode\SVNCodeDemo\SvnDemo\obj\Debug\SvnDemo.pdb
 E:\MyCode\SVNCodeDemo\SvnDemo\bin\Debug\SvnDemo.exe.config
 E:\MyCode\SVNCodeDemo\SvnDemo\bin\Debug\SvnDemo.pdb
+J:\Codes\LswCodes\SVNCodeDemo\SvnDemo\bin\Debug\SvnDemo.exe.config
+J:\Codes\LswCodes\SVNCodeDemo\SvnDemo\obj\Debug\SvnDemo.exe
+J:\Codes\LswCodes\SVNCodeDemo\SvnDemo\obj\Debug\SvnDemo.pdb
