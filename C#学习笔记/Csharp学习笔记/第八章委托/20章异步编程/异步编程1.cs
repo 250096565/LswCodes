@@ -17,6 +17,7 @@ namespace 第八章委托._20章异步编程
             methodCaller.BeginInvoke("aaa", GetResult, "ok");
         }
 
+
         public string DownLoadFile(string url)
         {
             int buffer = 2048;
