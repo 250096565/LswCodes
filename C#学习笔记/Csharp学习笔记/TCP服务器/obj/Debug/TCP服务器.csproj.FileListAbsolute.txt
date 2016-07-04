@@ -7,3 +7,12 @@ J:\Codes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\obj\Debug\TCP�
 J:\Codes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\obj\Debug\TCP服务器.csproj.GenerateResource.Cache
 J:\Codes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\obj\Debug\TCP服务器.exe
 J:\Codes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\obj\Debug\TCP服务器.pdb
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\bin\Debug\TCP服务器.exe.config
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\bin\Debug\TCP服务器.exe
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\bin\Debug\TCP服务器.pdb
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\obj\Debug\TCP服务器.csprojResolveAssemblyReference.cache
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\obj\Debug\TCP服务器.Form1.resources
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\obj\Debug\TCP服务器.Properties.Resources.resources
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\obj\Debug\TCP服务器.csproj.GenerateResource.Cache
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\obj\Debug\TCP服务器.exe
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\TCP服务器\obj\Debug\TCP服务器.pdb

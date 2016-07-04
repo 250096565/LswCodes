@@ -6,3 +6,11 @@ J:\Codes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\obj\Debug\DT
 J:\Codes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\obj\Debug\DTO转换测试.exe
 J:\Codes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\obj\Debug\DTO转换测试.pdb
 J:\Codes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\bin\Debug\EmitMapper.dll
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\bin\Debug\DTO转换测试.exe.config
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\bin\Debug\DTO转换测试.exe
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\bin\Debug\DTO转换测试.pdb
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\bin\Debug\AutoMapper.dll
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\bin\Debug\EmitMapper.dll
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\obj\Debug\DTO转换测试.csprojResolveAssemblyReference.cache
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\obj\Debug\DTO转换测试.exe
+E:\codes\LswCodes\LswCodes\C#学习笔记\Csharp学习笔记\DTO转换测试\obj\Debug\DTO转换测试.pdb
