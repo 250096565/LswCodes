@@ -1,11 +1,16 @@
-﻿namespace TCP服务器
+﻿using System;
+using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace TCP服务器
 {
     partial class Form1
     {
         /// <summary>
         /// 必需的设计器变量。
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// 清理所有正在使用的资源。
@@ -92,6 +97,7 @@
             this.btnStop.TabIndex = 2;
             this.btnStop.Text = "停止监听";
             this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // txtMessage
             // 
@@ -109,6 +115,7 @@
             this.btnClear.TabIndex = 2;
             this.btnClear.Text = "清空消息";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnAccept
             // 
@@ -118,6 +125,7 @@
             this.btnAccept.TabIndex = 2;
             this.btnAccept.Text = "接收";
             this.btnAccept.UseVisualStyleBackColor = true;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // txtContent
             // 
@@ -135,6 +143,7 @@
             this.btnClose.TabIndex = 2;
             this.btnClose.Text = "断开连接";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSend
             // 
@@ -172,18 +181,18 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtIP;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtPort;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnStop;
-        private System.Windows.Forms.TextBox txtMessage;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnAccept;
-        private System.Windows.Forms.TextBox txtContent;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnSend;
+        private TextBox txtIP;
+        private Label label1;
+        private TextBox txtPort;
+        private Label label2;
+        private Button btnStart;
+        private Button btnStop;
+        private TextBox txtMessage;
+        private Button btnClear;
+        private Button btnAccept;
+        private TextBox txtContent;
+        private Button btnClose;
+        private Button btnSend;
     }
 }
 
