@@ -101,7 +101,7 @@ namespace TCP服务器
             // 
             // txtMessage
             // 
-            this.txtMessage.Location = new System.Drawing.Point(33, 108);
+            this.txtMessage.Location = new System.Drawing.Point(33, 119);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.Size = new System.Drawing.Size(571, 109);
