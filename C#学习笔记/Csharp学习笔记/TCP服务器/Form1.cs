@@ -47,13 +47,14 @@ namespace TCP服务器
             ipaddress = IPAddress.Loopback;
             txtIP.Text = ipaddress.ToString();
             txtPort.Text = Port.ToString();
+            btnStop.Enabled = false;
         }
 
 
         //显示消息
         private void showMessage(string str)
         {
-            txtMessage.Text += str + "\n";
+            txtMessage.Text += Environment.NewLine + str;
         }
 
         /// <summary>
@@ -78,8 +79,8 @@ namespace TCP服务器
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            Task task = new Task(SendMessage);
-            task.Start(txtContent.Text);
+            Thread task = new Thread(SendMessage);
+            task.Start("服务器  " + DateTime.Now.ToLocalTime() + Environment.NewLine + "   " + txtContent.Text);
         }
 
         private void SendMessage(object state)
@@ -123,6 +124,8 @@ namespace TCP服务器
             //启动线程接收请求
             Task task = new Task(AcceptClientConnect);
             task.Start();
+            btnStop.Enabled = true;
+            btnStart.Enabled = false;
         }
 
 
@@ -156,6 +159,8 @@ namespace TCP服务器
         /// <param name="e"></param>
         private void btnStop_Click(object sender, EventArgs e)
         {
+            btnStart.Enabled = true;
+            btnStop.Enabled = false;
             tcpLister.Stop();
         }
 
@@ -166,7 +171,7 @@ namespace TCP服务器
         /// <param name="e"></param>
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtContent.Text = string.Empty;
+            txtMessage.Text = string.Empty;
         }
 
 
