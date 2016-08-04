@@ -8,3 +8,13 @@ J:\Codes\LswCodes\AngularDemo\Angular\library\bin\ComomHelper.dll
 J:\Codes\LswCodes\AngularDemo\Angular\library\bin\Newtonsoft.Json.dll
 J:\Codes\LswCodes\AngularDemo\Angular\library\bin\ComomHelper.pdb
 J:\Codes\LswCodes\AngularDemo\Angular\library\bin\Newtonsoft.Json.xml
+E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.csprojResolveAssemblyReference.cache
+E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.dll
+E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.pdb
+E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\bin\library.dll.config
+E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\bin\library.dll
+E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\bin\library.pdb
+E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\bin\ComomHelper.dll
+E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\bin\Newtonsoft.Json.dll
+E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\bin\ComomHelper.pdb
+E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\bin\Newtonsoft.Json.xml

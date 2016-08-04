@@ -6,12 +6,13 @@
 @model Collection<ApiDescription>
 
 @{
-    ViewBag.Title = "ASP.NET Web API Help Page";
+    ViewBag.Title = "WebApi½Ó¿Ú°ïÖúÎÄµµ";
 
     // Group APIs by controller
     ILookup<HttpControllerDescriptor, ApiDescription> apiGroups = Model.ToLookup(api => api.ActionDescriptor.ControllerDescriptor);
 }
 
+<script src="~/Scripts/translator.js"></script>
 <header>
     <div class="content-wrapper">
         <div class="float-left">
