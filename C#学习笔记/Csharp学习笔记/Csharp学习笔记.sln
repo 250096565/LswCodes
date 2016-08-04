@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO转换测试", "DTO转�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcp客户端", "Tcp客户端\Tcp客户端.csproj", "{BD57F18F-A04F-4A29-84E6-01068283B133}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDP网络通信", "UDP网络通信\UDP网络通信.csproj", "{F1C93CD1-1174-4FDD-B9F4-3E5ED241B795}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{BD57F18F-A04F-4A29-84E6-01068283B133}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD57F18F-A04F-4A29-84E6-01068283B133}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD57F18F-A04F-4A29-84E6-01068283B133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C93CD1-1174-4FDD-B9F4-3E5ED241B795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C93CD1-1174-4FDD-B9F4-3E5ED241B795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C93CD1-1174-4FDD-B9F4-3E5ED241B795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C93CD1-1174-4FDD-B9F4-3E5ED241B795}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +63,6 @@ Global
 		{ABDC766C-9FFA-423C-A9D7-C90C3151D1AB} = {2994A3F5-59C0-4EBE-8FCD-E4A8B4C2DCE0}
 		{3BD080A4-CE9C-4CFD-BF97-9814BEEDCB86} = {649A12AE-E112-4111-A80B-8D0B2711374F}
 		{BD57F18F-A04F-4A29-84E6-01068283B133} = {2994A3F5-59C0-4EBE-8FCD-E4A8B4C2DCE0}
+		{F1C93CD1-1174-4FDD-B9F4-3E5ED241B795} = {2994A3F5-59C0-4EBE-8FCD-E4A8B4C2DCE0}
 	EndGlobalSection
 EndGlobal
