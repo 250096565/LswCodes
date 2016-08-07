@@ -36,8 +36,8 @@ namespace UDP网络通信
                 break;
             }
 
-            int port = 51883;
-            int sendPort = 11883;
+            int port = 9020;
+            int sendPort = 9030;
             txtLocalPort.Text = port.ToString();
             txtSendPort.Text = sendPort.ToString();
 
@@ -50,6 +50,7 @@ namespace UDP网络通信
         /// <param name="e"></param>
         private void btnReceive_Click(object sender, EventArgs e)
         {
+            ReceiveUdpClient?.Close();
             //创建接收套接字
             IPAddress localIp = IPAddress.Parse(txtLocalIP.Text);
 
@@ -63,10 +64,9 @@ namespace UDP网络通信
             {
                 MessageBox.Show(ex.Message);
             }
-            Thread th = new Thread(ReceiveMessage);
-            th.Start();
-            //Task task = Task.Factory.StartNew(ReceiveMessage);
-            // task.Start();
+            ReceiveMessage();
+            // task = Task.Factory.StartNew(ReceiveMessage);
+            //task.Wait();
 
         }
 
@@ -74,7 +74,7 @@ namespace UDP网络通信
         /// <summary>
         /// 接收消息方法
         /// </summary>
-        private void ReceiveMessage()
+        private  void ReceiveMessage()
         {
             if (ReceiveUdpClient == null)
                 return;
@@ -84,6 +84,7 @@ namespace UDP网络通信
             {
                 try
                 {
+
                     //关闭receiveUdpClient时会产生异常
                     byte[] receiveBytes = ReceiveUdpClient.Receive(ref remoteIpEndPoint);
 
@@ -179,8 +180,7 @@ namespace UDP网络通信
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            if (ReceiveUdpClient != null)
-                ReceiveUdpClient.Close();
+            ReceiveUdpClient?.Close();
         }
 
         private void btnClear_Click(object sender, EventArgs e)

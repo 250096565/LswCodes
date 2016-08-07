@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcp客户端", "Tcp客户�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDP网络通信", "UDP网络通信\UDP网络通信.csproj", "{F1C93CD1-1174-4FDD-B9F4-3E5ED241B795}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDI截图", "聊天窗口\GDI截图.csproj", "{5F0FD40F-10F0-49D6-8FE1-9BAC1B15E587}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{F1C93CD1-1174-4FDD-B9F4-3E5ED241B795}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1C93CD1-1174-4FDD-B9F4-3E5ED241B795}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1C93CD1-1174-4FDD-B9F4-3E5ED241B795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0FD40F-10F0-49D6-8FE1-9BAC1B15E587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0FD40F-10F0-49D6-8FE1-9BAC1B15E587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0FD40F-10F0-49D6-8FE1-9BAC1B15E587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0FD40F-10F0-49D6-8FE1-9BAC1B15E587}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
