@@ -1,13 +1,3 @@
-J:\Codes\LswCodes\AngularDemo\Angular\library\bin\library.dll.config
-J:\Codes\LswCodes\AngularDemo\Angular\library\bin\library.dll
-J:\Codes\LswCodes\AngularDemo\Angular\library\bin\library.pdb
-J:\Codes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.csprojResolveAssemblyReference.cache
-J:\Codes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.dll
-J:\Codes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.pdb
-J:\Codes\LswCodes\AngularDemo\Angular\library\bin\ComomHelper.dll
-J:\Codes\LswCodes\AngularDemo\Angular\library\bin\Newtonsoft.Json.dll
-J:\Codes\LswCodes\AngularDemo\Angular\library\bin\ComomHelper.pdb
-J:\Codes\LswCodes\AngularDemo\Angular\library\bin\Newtonsoft.Json.xml
 E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.csprojResolveAssemblyReference.cache
 E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.dll
 E:\codes\LswCodes\LswCodes\AngularDemo\Angular\library\obj\Debug\library.pdb

@@ -1,10 +1,3 @@
-J:\Codes\LswCodes\AngularDemo\Angular\ComomHelper\obj\Debug\ComomHelper.csprojResolveAssemblyReference.cache
-J:\Codes\LswCodes\AngularDemo\Angular\ComomHelper\bin\Debug\ComomHelper.dll
-J:\Codes\LswCodes\AngularDemo\Angular\ComomHelper\bin\Debug\ComomHelper.pdb
-J:\Codes\LswCodes\AngularDemo\Angular\ComomHelper\bin\Debug\Newtonsoft.Json.dll
-J:\Codes\LswCodes\AngularDemo\Angular\ComomHelper\bin\Debug\Newtonsoft.Json.xml
-J:\Codes\LswCodes\AngularDemo\Angular\ComomHelper\obj\Debug\ComomHelper.dll
-J:\Codes\LswCodes\AngularDemo\Angular\ComomHelper\obj\Debug\ComomHelper.pdb
 E:\codes\LswCodes\LswCodes\AngularDemo\Angular\ComomHelper\bin\Debug\ComomHelper.dll
 E:\codes\LswCodes\LswCodes\AngularDemo\Angular\ComomHelper\bin\Debug\ComomHelper.pdb
 E:\codes\LswCodes\LswCodes\AngularDemo\Angular\ComomHelper\bin\Debug\Newtonsoft.Json.dll
