@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular-1", "Angular-1\Angular-1.csproj", "{CC560828-D4DA-402B-ABFF-1134BFA79611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore", "BookStore\BookStore.csproj", "{0748AB40-97A6-4CA7-8B37-BEADFA1532EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComomHelper", "ComomHelper\ComomHelper.csproj", "{DF555265-561C-4E7B-9124-85516E5FAC67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "library", "library\library.csproj", "{BF2644FE-4F1A-4EAB-8F97-50F30A26F414}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC560828-D4DA-402B-ABFF-1134BFA79611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC560828-D4DA-402B-ABFF-1134BFA79611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC560828-D4DA-402B-ABFF-1134BFA79611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC560828-D4DA-402B-ABFF-1134BFA79611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0748AB40-97A6-4CA7-8B37-BEADFA1532EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0748AB40-97A6-4CA7-8B37-BEADFA1532EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0748AB40-97A6-4CA7-8B37-BEADFA1532EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0748AB40-97A6-4CA7-8B37-BEADFA1532EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF555265-561C-4E7B-9124-85516E5FAC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF555265-561C-4E7B-9124-85516E5FAC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF555265-561C-4E7B-9124-85516E5FAC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF555265-561C-4E7B-9124-85516E5FAC67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF2644FE-4F1A-4EAB-8F97-50F30A26F414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2644FE-4F1A-4EAB-8F97-50F30A26F414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2644FE-4F1A-4EAB-8F97-50F30A26F414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2644FE-4F1A-4EAB-8F97-50F30A26F414}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

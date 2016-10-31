@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SAHZSQModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="CloudID" />
+          </Key>
+          <Property Name="CloudID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="200" />
+          <Property Name="password" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="passwordmd5" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="addr" Type="varchar" MaxLength="500" />
+          <Property Name="postcode" Type="varchar" MaxLength="50" />
+          <Property Name="bank" Type="varchar" MaxLength="50" />
+          <Property Name="branch" Type="varchar" MaxLength="50" />
+          <Property Name="cardnumber" Type="varchar" MaxLength="50" />
+          <Property Name="cardname" Type="varchar" MaxLength="50" />
+          <Property Name="weibo" Type="varchar" MaxLength="50" />
+          <Property Name="weixin" Type="varchar" MaxLength="50" />
+          <Property Name="QQ" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="mobile" Type="varchar" MaxLength="20" />
+          <Property Name="regdate" Type="datetime" />
+          <Property Name="idcard" Type="varchar" MaxLength="20" />
+          <Property Name="birthday" Type="datetime" />
+          <Property Name="gender" Type="varchar" MaxLength="2" />
+          <Property Name="memo" Type="text" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="areaid" Type="int" />
+          <Property Name="openidQQ" Type="varchar" MaxLength="50" />
+          <Property Name="isEnterprise" Type="bit" />
+          <Property Name="closed" Type="bit" />
+          <Property Name="UsCardNumber" Type="varchar" MaxLength="50" />
+          <Property Name="UsCardName" Type="varchar" MaxLength="50" />
+          <Property Name="UsBank" Type="varchar" MaxLength="50" />
+          <Property Name="HkCardNumber" Type="varchar" MaxLength="50" />
+          <Property Name="HkCardName" Type="varchar" MaxLength="50" />
+          <Property Name="HKBank" Type="varchar" MaxLength="50" />
+          <Property Name="CS_FLAG" Type="bit" Nullable="false" />
+          <Property Name="tracenumber" Type="varchar" MaxLength="50" />
+          <Property Name="IsTemporaryPwd" Type="bit" />
+          <Property Name="cardnumberStatus" Type="int" Nullable="false" />
+          <Property Name="TemporaryPwd" Type="varchar" MaxLength="20" />
+          <Property Name="LivenessScore" Type="int" />
+          <Property Name="IdType" Type="int" />
+        </EntityType>
+        <EntityType Name="UserRole">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CloudID" Type="varchar" MaxLength="50" />
+          <Property Name="name" Type="varchar" MaxLength="200" />
+          <Property Name="levelcode" Type="int" Nullable="false" />
+          <Property Name="regdate" Type="datetime" />
+          <Property Name="areaid" Type="int" Nullable="false" />
+          <Property Name="shopname" Type="varchar" MaxLength="50" />
+          <Property Name="mobile" Type="varchar" MaxLength="50" />
+          <Property Name="addr" Type="varchar" MaxLength="500" />
+          <Property Name="postcode" Type="varchar" MaxLength="50" />
+          <Property Name="promoter" Type="varchar" MaxLength="50" />
+          <Property Name="bindingId" Type="varchar" MaxLength="50" />
+          <Property Name="bindingId2" Type="varchar" MaxLength="50" />
+          <Property Name="bank" Type="varchar" MaxLength="50" />
+          <Property Name="branch" Type="varchar" MaxLength="50" />
+          <Property Name="cardnumber" Type="varchar" MaxLength="50" />
+          <Property Name="cardname" Type="varchar" MaxLength="50" />
+          <Property Name="idcard" Type="varchar" MaxLength="50" />
+          <Property Name="fee" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="regionManagerID" Type="varchar" MaxLength="50" />
+          <Property Name="ZJID" Type="varchar" MaxLength="50" />
+          <Property Name="status" Type="bit" />
+          <Property Name="enterpriseInfo" Type="text" />
+          <Property Name="memo" Type="text" />
+          <Property Name="authChar" Type="varchar" MaxLength="50" />
+          <Property Name="productID" Type="varchar" MaxLength="50" />
+          <Property Name="orderid" Type="varchar" MaxLength="50" />
+          <Property Name="isOnlineShop" Type="bit" Nullable="false" />
+          <Property Name="OnLineCheck" Type="bit" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="description" Type="text" />
+          <Property Name="cabinet" Type="bit" Nullable="false" />
+          <Property Name="vipcard" Type="varchar" MaxLength="50" />
+          <Property Name="qq" Type="varchar" MaxLength="50" />
+          <Property Name="weixin" Type="varchar" MaxLength="50" />
+          <Property Name="weibo" Type="varchar" MaxLength="150" />
+          <Property Name="email" Type="varchar" MaxLength="150" />
+          <Property Name="closed" Type="bit" Nullable="false" />
+          <Property Name="nickname" Type="varchar" MaxLength="50" />
+          <Property Name="transferStat" Type="varchar" MaxLength="500" />
+          <Property Name="payDate" Type="datetime" />
+          <Property Name="ExpiredDate" Type="datetime" />
+          <Property Name="keystring" Type="varchar(max)" />
+          <Property Name="keystring1" Type="varchar(max)" />
+          <Property Name="keystring1Info" Type="varchar(max)" />
+          <Property Name="CS_FLAG" Type="bit" Nullable="false" />
+          <Property Name="tracenumber" Type="varchar" MaxLength="50" />
+          <Property Name="cardnumberStatus" Type="int" />
+          <Property Name="plusid" Type="int" />
+          <Property Name="plusDate" Type="datetime" />
+          <Property Name="FixedTelephone" Type="varchar" MaxLength="50" />
+          <Property Name="IdType" Type="int" />
+        </EntityType>
+        <EntityType Name="ZMChuangDianAccount">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="CloudID" Type="varchar" MaxLength="50" />
+          <Property Name="InNum" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="OutNum" Type="numeric" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Operator" Type="varchar" MaxLength="50" />
+          <Property Name="TraceNumber" Type="varchar" MaxLength="50" />
+          <Property Name="Type" Type="int" />
+          <Property Name="source" Type="varchar" MaxLength="50" />
+          <Property Name="TRANS" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZMColumn">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Column" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ZMCoupon">
+          <Key>
+            <PropertyRef Name="CouponID" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CouponID" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Denomination" Type="money" />
+          <Property Name="Price" Type="money" />
+          <Property Name="TimeExplain" Type="varchar" MaxLength="50" />
+          <Property Name="Type" Type="int" />
+          <Property Name="UsableProducts" Type="varchar" MaxLength="200" />
+          <Property Name="UsableProductClass" Type="varchar" MaxLength="50" />
+          <Property Name="UsableProductBrand" Type="varchar" MaxLength="50" />
+          <Property Name="Discount" Type="money" />
+        </EntityType>
+        <EntityType Name="ZMCouponRecord">
+          <Key>
+            <PropertyRef Name="CouponValue" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CloudID" Type="varchar" MaxLength="50" />
+          <Property Name="RoleID" Type="varchar" MaxLength="50" />
+          <Property Name="Date" Type="datetime" />
+          <Property Name="CouponValue" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CouponID" Type="varchar" MaxLength="20" />
+          <Property Name="Status" Type="bit" />
+          <Property Name="ExpireDate" Type="datetime" />
+          <Property Name="UseRoleID" Type="varchar" MaxLength="50" />
+          <Property Name="OrderID" Type="varchar" MaxLength="50" />
+          <Property Name="UseDate" Type="datetime" />
+          <Property Name="SendDate" Type="datetime" />
+          <Property Name="SendMobile" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="SAHZSQModelStoreContainer">
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserRole" EntityType="Self.UserRole" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ZMChuangDianAccount" EntityType="Self.ZMChuangDianAccount" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ZMColumn" EntityType="Self.ZMColumn" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ZMCoupon" EntityType="Self.ZMCoupon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ZMCouponRecord" EntityType="Self.ZMCouponRecord" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SAHZSQModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="CloudID" />
+          </Key>
+          <Property Name="CloudID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="passwordmd5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="addr" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="postcode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="bank" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="branch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cardnumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cardname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="weibo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="weixin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="QQ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="regdate" Type="DateTime" Precision="3" />
+          <Property Name="idcard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="birthday" Type="DateTime" Precision="3" />
+          <Property Name="gender" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="memo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="areaid" Type="Int32" />
+          <Property Name="openidQQ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="isEnterprise" Type="Boolean" />
+          <Property Name="closed" Type="Boolean" />
+          <Property Name="UsCardNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UsCardName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UsBank" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HkCardNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HkCardName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HKBank" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CS_FLAG" Type="Boolean" Nullable="false" />
+          <Property Name="tracenumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IsTemporaryPwd" Type="Boolean" />
+          <Property Name="cardnumberStatus" Type="Int32" Nullable="false" />
+          <Property Name="TemporaryPwd" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="LivenessScore" Type="Int32" />
+          <Property Name="IdType" Type="Int32" />
+        </EntityType>
+        <EntityType Name="UserRole">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CloudID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="levelcode" Type="Int32" Nullable="false" />
+          <Property Name="regdate" Type="DateTime" Precision="3" />
+          <Property Name="areaid" Type="Int32" Nullable="false" />
+          <Property Name="shopname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="addr" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="postcode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="promoter" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="bindingId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="bindingId2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="bank" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="branch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cardnumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cardname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="idcard" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fee" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="regionManagerID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ZJID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="status" Type="Boolean" />
+          <Property Name="enterpriseInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="memo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="authChar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="productID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="orderid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="isOnlineShop" Type="Boolean" Nullable="false" />
+          <Property Name="OnLineCheck" Type="Boolean" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="cabinet" Type="Boolean" Nullable="false" />
+          <Property Name="vipcard" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="qq" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="weixin" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="weibo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="closed" Type="Boolean" Nullable="false" />
+          <Property Name="nickname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="transferStat" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="payDate" Type="DateTime" Precision="3" />
+          <Property Name="ExpiredDate" Type="DateTime" Precision="3" />
+          <Property Name="keystring" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="keystring1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="keystring1Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CS_FLAG" Type="Boolean" Nullable="false" />
+          <Property Name="tracenumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cardnumberStatus" Type="Int32" />
+          <Property Name="plusid" Type="Int32" />
+          <Property Name="plusDate" Type="DateTime" Precision="3" />
+          <Property Name="FixedTelephone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IdType" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ZMChuangDianAccount">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="CloudID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="InNum" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="OutNum" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Operator" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TraceNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="Int32" />
+          <Property Name="source" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TRANS" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZMColumn">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Column" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ZMCoupon">
+          <Key>
+            <PropertyRef Name="CouponID" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CouponID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Denomination" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="TimeExplain" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="Int32" />
+          <Property Name="UsableProducts" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="UsableProductClass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UsableProductBrand" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Discount" Type="Decimal" Precision="19" Scale="4" />
+        </EntityType>
+        <EntityType Name="ZMCouponRecord">
+          <Key>
+            <PropertyRef Name="CouponValue" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CloudID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RoleID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="CouponValue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CouponID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="Boolean" />
+          <Property Name="ExpireDate" Type="DateTime" Precision="3" />
+          <Property Name="UseRoleID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OrderID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UseDate" Type="DateTime" Precision="3" />
+          <Property Name="SendDate" Type="DateTime" Precision="3" />
+          <Property Name="SendMobile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="SAHZSQEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="User" EntityType="Self.User" />
+          <EntitySet Name="UserRole" EntityType="Self.UserRole" />
+          <EntitySet Name="ZMChuangDianAccount" EntityType="Self.ZMChuangDianAccount" />
+          <EntitySet Name="ZMColumn" EntityType="Self.ZMColumn" />
+          <EntitySet Name="ZMCoupon" EntityType="Self.ZMCoupon" />
+          <EntitySet Name="ZMCouponRecord" EntityType="Self.ZMCouponRecord" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SAHZSQModelStoreContainer" CdmEntityContainer="SAHZSQEntities">
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="SAHZSQModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="CloudID" ColumnName="CloudID" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="passwordmd5" ColumnName="passwordmd5" />
+                <ScalarProperty Name="addr" ColumnName="addr" />
+                <ScalarProperty Name="postcode" ColumnName="postcode" />
+                <ScalarProperty Name="bank" ColumnName="bank" />
+                <ScalarProperty Name="branch" ColumnName="branch" />
+                <ScalarProperty Name="cardnumber" ColumnName="cardnumber" />
+                <ScalarProperty Name="cardname" ColumnName="cardname" />
+                <ScalarProperty Name="weibo" ColumnName="weibo" />
+                <ScalarProperty Name="weixin" ColumnName="weixin" />
+                <ScalarProperty Name="QQ" ColumnName="QQ" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="regdate" ColumnName="regdate" />
+                <ScalarProperty Name="idcard" ColumnName="idcard" />
+                <ScalarProperty Name="birthday" ColumnName="birthday" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="memo" ColumnName="memo" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="areaid" ColumnName="areaid" />
+                <ScalarProperty Name="openidQQ" ColumnName="openidQQ" />
+                <ScalarProperty Name="isEnterprise" ColumnName="isEnterprise" />
+                <ScalarProperty Name="closed" ColumnName="closed" />
+                <ScalarProperty Name="UsCardNumber" ColumnName="UsCardNumber" />
+                <ScalarProperty Name="UsCardName" ColumnName="UsCardName" />
+                <ScalarProperty Name="UsBank" ColumnName="UsBank" />
+                <ScalarProperty Name="HkCardNumber" ColumnName="HkCardNumber" />
+                <ScalarProperty Name="HkCardName" ColumnName="HkCardName" />
+                <ScalarProperty Name="HKBank" ColumnName="HKBank" />
+                <ScalarProperty Name="CS_FLAG" ColumnName="CS_FLAG" />
+                <ScalarProperty Name="tracenumber" ColumnName="tracenumber" />
+                <ScalarProperty Name="IsTemporaryPwd" ColumnName="IsTemporaryPwd" />
+                <ScalarProperty Name="cardnumberStatus" ColumnName="cardnumberStatus" />
+                <ScalarProperty Name="TemporaryPwd" ColumnName="TemporaryPwd" />
+                <ScalarProperty Name="LivenessScore" ColumnName="LivenessScore" />
+                <ScalarProperty Name="IdType" ColumnName="IdType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserRole">
+            <EntityTypeMapping TypeName="SAHZSQModel.UserRole">
+              <MappingFragment StoreEntitySet="UserRole">
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="CloudID" ColumnName="CloudID" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="levelcode" ColumnName="levelcode" />
+                <ScalarProperty Name="regdate" ColumnName="regdate" />
+                <ScalarProperty Name="areaid" ColumnName="areaid" />
+                <ScalarProperty Name="shopname" ColumnName="shopname" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="addr" ColumnName="addr" />
+                <ScalarProperty Name="postcode" ColumnName="postcode" />
+                <ScalarProperty Name="promoter" ColumnName="promoter" />
+                <ScalarProperty Name="bindingId" ColumnName="bindingId" />
+                <ScalarProperty Name="bindingId2" ColumnName="bindingId2" />
+                <ScalarProperty Name="bank" ColumnName="bank" />
+                <ScalarProperty Name="branch" ColumnName="branch" />
+                <ScalarProperty Name="cardnumber" ColumnName="cardnumber" />
+                <ScalarProperty Name="cardname" ColumnName="cardname" />
+                <ScalarProperty Name="idcard" ColumnName="idcard" />
+                <ScalarProperty Name="fee" ColumnName="fee" />
+                <ScalarProperty Name="regionManagerID" ColumnName="regionManagerID" />
+                <ScalarProperty Name="ZJID" ColumnName="ZJID" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="enterpriseInfo" ColumnName="enterpriseInfo" />
+                <ScalarProperty Name="memo" ColumnName="memo" />
+                <ScalarProperty Name="authChar" ColumnName="authChar" />
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="orderid" ColumnName="orderid" />
+                <ScalarProperty Name="isOnlineShop" ColumnName="isOnlineShop" />
+                <ScalarProperty Name="OnLineCheck" ColumnName="OnLineCheck" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="cabinet" ColumnName="cabinet" />
+                <ScalarProperty Name="vipcard" ColumnName="vipcard" />
+                <ScalarProperty Name="qq" ColumnName="qq" />
+                <ScalarProperty Name="weixin" ColumnName="weixin" />
+                <ScalarProperty Name="weibo" ColumnName="weibo" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="closed" ColumnName="closed" />
+                <ScalarProperty Name="nickname" ColumnName="nickname" />
+                <ScalarProperty Name="transferStat" ColumnName="transferStat" />
+                <ScalarProperty Name="payDate" ColumnName="payDate" />
+                <ScalarProperty Name="ExpiredDate" ColumnName="ExpiredDate" />
+                <ScalarProperty Name="keystring" ColumnName="keystring" />
+                <ScalarProperty Name="keystring1" ColumnName="keystring1" />
+                <ScalarProperty Name="keystring1Info" ColumnName="keystring1Info" />
+                <ScalarProperty Name="CS_FLAG" ColumnName="CS_FLAG" />
+                <ScalarProperty Name="tracenumber" ColumnName="tracenumber" />
+                <ScalarProperty Name="cardnumberStatus" ColumnName="cardnumberStatus" />
+                <ScalarProperty Name="plusid" ColumnName="plusid" />
+                <ScalarProperty Name="plusDate" ColumnName="plusDate" />
+                <ScalarProperty Name="FixedTelephone" ColumnName="FixedTelephone" />
+                <ScalarProperty Name="IdType" ColumnName="IdType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZMChuangDianAccount">
+            <EntityTypeMapping TypeName="SAHZSQModel.ZMChuangDianAccount">
+              <MappingFragment StoreEntitySet="ZMChuangDianAccount">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="CloudID" ColumnName="CloudID" />
+                <ScalarProperty Name="InNum" ColumnName="InNum" />
+                <ScalarProperty Name="OutNum" ColumnName="OutNum" />
+                <ScalarProperty Name="Operator" ColumnName="Operator" />
+                <ScalarProperty Name="TraceNumber" ColumnName="TraceNumber" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="source" ColumnName="source" />
+                <ScalarProperty Name="TRANS" ColumnName="TRANS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZMColumn">
+            <EntityTypeMapping TypeName="SAHZSQModel.ZMColumn">
+              <MappingFragment StoreEntitySet="ZMColumn">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Column" ColumnName="Column" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZMCoupon">
+            <EntityTypeMapping TypeName="SAHZSQModel.ZMCoupon">
+              <MappingFragment StoreEntitySet="ZMCoupon">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Denomination" ColumnName="Denomination" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="TimeExplain" ColumnName="TimeExplain" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="UsableProducts" ColumnName="UsableProducts" />
+                <ScalarProperty Name="UsableProductClass" ColumnName="UsableProductClass" />
+                <ScalarProperty Name="UsableProductBrand" ColumnName="UsableProductBrand" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZMCouponRecord">
+            <EntityTypeMapping TypeName="SAHZSQModel.ZMCouponRecord">
+              <MappingFragment StoreEntitySet="ZMCouponRecord">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="CloudID" ColumnName="CloudID" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="CouponValue" ColumnName="CouponValue" />
+                <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+                <ScalarProperty Name="UseRoleID" ColumnName="UseRoleID" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="UseDate" ColumnName="UseDate" />
+                <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+                <ScalarProperty Name="SendMobile" ColumnName="SendMobile" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
