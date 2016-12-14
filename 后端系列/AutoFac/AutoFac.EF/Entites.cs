@@ -19,6 +19,8 @@ namespace AutoFac.EF
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<UserRole> UserRoles { get; set; }
 
+        public virtual DbSet<SuperUser> SuperUser { get; set; }
+
 
         /// <summary>
         /// Fluent API

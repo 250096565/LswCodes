@@ -38,7 +38,7 @@ namespace Core.User
         {
 
             //一对一的关系, User表中可以没有UserCard;但是UserCard表中必须有User -- 开启级联删除
-            HasRequired(u => u.User).WithOptional(u => u.UserCard).WillCascadeOnDelete(true);
+            HasRequired(u => u.User).WithOptional(u => u.Card).WillCascadeOnDelete(true);
             //不推荐的写法 
             //HasRequired(u => u.User).WithMany().HasForeignKey(u => u.UserId);
         }

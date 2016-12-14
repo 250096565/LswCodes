@@ -17,11 +17,12 @@ namespace Core.User
         public Guid UserId { get; set; }
 
         [Required]
-        [MaxLength(20)]
+        [MaxLength(20)] 
         public string Name { get; set; }
 
 
         [Timestamp]
+        [ConcurrencyCheck]
         public byte[] RowVersion { get; set; }
 
         public List<UserRole.UserRole> UserRoles { get; set; }
@@ -29,12 +30,12 @@ namespace Core.User
         /// <summary>
         /// 扩展
         /// </summary>
-        public UserAddress UserAddress { get; set; }
+        public UserAddress Address { get; set; }
 
         /// <summary>
         /// 一个用户拥有一个身份证
         /// </summary>
-        public UserCard UserCard { get; set; }
+        public UserCard Card { get; set; }
 
     }
 

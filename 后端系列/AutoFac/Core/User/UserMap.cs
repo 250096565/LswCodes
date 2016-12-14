@@ -20,13 +20,21 @@ namespace Core.User
             Property(u => u.Name).IsRequired();
 
 
-            /*
-             * TPH玩法 
-             * Map<Core.User.SuperUser>(u => u.Requires("From").HasValue("From-Super"));
-               Map<Core.User.User>(u => u.Requires("From").HasValue("From-User"));
-             */
 
+            //TPH玩法 
+            //Map<Core.User.SuperUser>(u => u.Requires("From").HasValue("From-Super"));
+            //Map<Core.User.User>(u => u.Requires("From").HasValue("From-User"));
+
+
+            //TPT  
             Map<Core.User.SuperUser>(u => u.ToTable("T_SuperUser"));
+
+            //TPC
+            //Map<Core.User.SuperUser>(u =>
+            //{
+            //    u.ToTable("T_SuperUser");
+            //    u.MapInheritedProperties();
+            //});
         }
     }
 }
