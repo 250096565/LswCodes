@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliPay", "AliPay\AliPay.csproj", "{341D8670-23B6-4014-AB85-12812707F620}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Alipay", "Com.Alipay\Com.Alipay.csproj", "{79247541-A8C6-422C-8237-9B766EBEFB7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliPayMvc", "AliPayMvc\AliPayMvc.csproj", "{01660175-2615-41CB-82D6-1CE1C9B23E42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{341D8670-23B6-4014-AB85-12812707F620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341D8670-23B6-4014-AB85-12812707F620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341D8670-23B6-4014-AB85-12812707F620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341D8670-23B6-4014-AB85-12812707F620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79247541-A8C6-422C-8237-9B766EBEFB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79247541-A8C6-422C-8237-9B766EBEFB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79247541-A8C6-422C-8237-9B766EBEFB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79247541-A8C6-422C-8237-9B766EBEFB7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01660175-2615-41CB-82D6-1CE1C9B23E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01660175-2615-41CB-82D6-1CE1C9B23E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01660175-2615-41CB-82D6-1CE1C9B23E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01660175-2615-41CB-82D6-1CE1C9B23E42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

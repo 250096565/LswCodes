@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<script src="~/script/jquery-1.7.1.min.js"></script>
+
+<script type="text/javascript">
+    function goPay() {
+        var orderId = $("#orderId").val();
+
+        window.open("/Home/Payment?orderId=" + orderId);
+
+ 
+    }
+
+</script>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    请输入订单Id<input type="text" id="orderId" /><br />
+    <input type="button" value="去支付" onclick="goPay()" />
+</body>
+</html>
