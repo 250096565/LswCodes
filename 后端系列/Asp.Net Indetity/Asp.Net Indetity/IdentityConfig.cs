@@ -30,6 +30,7 @@ namespace Asp.Net_Indetity
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
                 LoginPath = new PathString("/Account/Login"),
             });
+
         }
     }
 }

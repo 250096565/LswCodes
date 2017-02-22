@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net高并发解决方案", "Net高并发解决方案\Net高并发解决方案.csproj", "{532CC90F-44DF-4803-A788-F39E92D4DC6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MqConsumer", "MqConsumer\MqConsumer.csproj", "{0AF841C4-30BD-41D6-ABAF-D8AEE1C8F3FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF", "EF\EF.csproj", "{AF332C3C-DAA3-4958-AA3B-C34A5ECCE85E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{532CC90F-44DF-4803-A788-F39E92D4DC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{532CC90F-44DF-4803-A788-F39E92D4DC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{532CC90F-44DF-4803-A788-F39E92D4DC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{532CC90F-44DF-4803-A788-F39E92D4DC6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AF841C4-30BD-41D6-ABAF-D8AEE1C8F3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF841C4-30BD-41D6-ABAF-D8AEE1C8F3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF841C4-30BD-41D6-ABAF-D8AEE1C8F3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF841C4-30BD-41D6-ABAF-D8AEE1C8F3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF332C3C-DAA3-4958-AA3B-C34A5ECCE85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF332C3C-DAA3-4958-AA3B-C34A5ECCE85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF332C3C-DAA3-4958-AA3B-C34A5ECCE85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF332C3C-DAA3-4958-AA3B-C34A5ECCE85E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

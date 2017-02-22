@@ -52,12 +52,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirstDbContext.cs" />
-    <Compile Include="Migrations\201612111213045_20161211.cs" />
-    <Compile Include="Migrations\201612111213045_20161211.Designer.cs">
-      <DependentUpon>201612111213045_20161211.cs</DependentUpon>
+    <Compile Include="Migrations\201612241215155_code.cs" />
+    <Compile Include="Migrations\201612241215155_code.Designer.cs">
+      <DependentUpon>201612241215155_code.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612241252308_code1.cs" />
+    <Compile Include="Migrations\201612241252308_code1.Designer.cs">
+      <DependentUpon>201612241252308_code1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Activities\Activity_System.cs" />
+    <Compile Include="Model\banks\Bank_Assignment.cs" />
+    <Compile Include="Model\banks\Bank_Authorization.cs" />
+    <Compile Include="Model\banks\Bank_Own.cs" />
+    <Compile Include="Model\BaseEntities\BaseEntity.cs" />
+    <Compile Include="Model\BaseEntities\BaseEntityOnlyWithCreationAudited.cs" />
+    <Compile Include="Model\BaseEntities\BaseEntityOnlyWithCreationTime.cs" />
+    <Compile Include="Model\BaseEntities\BaseEntityWithoutSoftDeleteAudited.cs" />
+    <Compile Include="Model\Mappings\TagAndBankData.cs" />
+    <Compile Include="Model\Notifications\Notification_System.cs" />
+    <Compile Include="Model\Notifications\Notification_User.cs" />
+    <Compile Include="Model\SchemaConsts.cs" />
+    <Compile Include="Model\Singles\Single_Authorization.cs" />
+    <Compile Include="Model\Singles\Single_Data.cs" />
+    <Compile Include="Model\StringLengthConsts.cs" />
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Model\Tags\Tag_Authorization.cs" />
+    <Compile Include="Model\Tags\Tag_Own.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,8 +88,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201612111213045_20161211.resx">
-      <DependentUpon>201612111213045_20161211.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201612241215155_code.resx">
+      <DependentUpon>201612241215155_code.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612241252308_code1.resx">
+      <DependentUpon>201612241252308_code1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
