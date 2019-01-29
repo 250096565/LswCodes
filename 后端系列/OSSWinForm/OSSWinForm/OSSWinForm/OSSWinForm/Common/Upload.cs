@@ -11,9 +11,9 @@ namespace OSSWinForm
 {
     public class Upload
     {
-        const string accessId = "Oqkj7h3A6LLY3IMe";
-        const string accessKey = "knCMiPiIvEnKXNQqM6RLYefQVlK0sh";
-        const string endpoint = "http://oss-cn-beijing.aliyuncs.com";
+        const string accessId = "***************";
+        const string accessKey = "***************";
+        const string endpoint = "****************";
         const string bucketName = "shianyun-oss";
 
         public static string UploadFile(Stream stream, string name, string ext)
